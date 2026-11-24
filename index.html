@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santino Corzo | Portfolio Personal</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado principal y barra de navegación interna -->
+  <header>
+    <div class="contenedor header-contenido">
+      <div class="marca">
+        <h1>Santino Corzo</h1>
+        <p class="subtitulo">Estudiante de 6º año • Desarrollo y Robótica</p>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+
+    <!-- Sección 1: Presentación inicial -->
+    <section id="inicio" class="seccion seccion-inicio">
+      <div class="contenedor inicio-grid">
+        <div class="inicio-texto">
+          <span class="etiqueta">Versión 0.1</span>
+          <h2>Hola, soy Santino Corzo</h2>
+          <p class="frase-profesional">
+            Estudiante apasionado por la programación, la electrónica y el desarrollo de soluciones tecnológicas, siempre con ganas de seguir aprendiendo.
+          </p>
+          <a href="#proyectos" class="boton">Ver mis proyectos</a>
+        </div>
+        <div class="inicio-imagen">
+          <img src="assets/img/avatar.png" alt="Iniciales SC de Santino Corzo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 2: Sobre mí -->
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy Santino Corzo, estudiante de sexto año con interés en la programación y la construcción de proyectos tecnológicos. Me motiva enfrentar desafíos prácticos donde pueda combinar código y hardware, siempre con ganas de seguir aprendiendo y mejorando mis habilidades día a día.
+        </p>
+        <p>
+          me gustaria especializarme en la ciberseguridad
+
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección 3: Proyectos (3 artículos independientes) -->
+    <section id="proyectos" class="seccion seccion-alterna">
+      <div class="contenedor">
+        <h2>Proyectos</h2>
+        <p class="intro-seccion">Selección de trabajos realizados entre 2024 y 2026.</p>
+
+        <div class="grid-proyectos">
+
+          <!-- Proyecto 1 -->
+          <article class="tarjeta">
+            <img src="assets/img/proyecto-seguidor-linea.png" alt="Captura o fotografía del autito seguidor de línea">
+            <div class="tarjeta-cuerpo">
+              <span class="anio">2026</span>
+              <h3>Autito seguidor de línea</h3>
+              <p><strong>Problema:</strong> Lograr que un vehículo autónomo detecte y siga una trayectoria marcada sin salirse del recorrido.</p>
+              <p><strong>Solución:</strong> Construcción de un robot móvil capaz de leer el camino mediante sensores y corregir su dirección automáticamente.</p>
+              <p><strong>Participación:</strong> Realicé tanto el armado físico completo del vehículo como la programación del código de control.</p>
+              <p><strong>Tecnologías:</strong> [materiales: Arduino, C++, sensores infrarrojos, motores DC]</p>
+              
+              <p class="evidencia">
+              
+              </p>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="tarjeta">
+            <img src="assets/img/proyecto-vampiro.png" alt="Captura o fotografía del proyecto Vampiro con servomotor">
+            <div class="tarjeta-cuerpo">
+              <span class="anio">2024</span>
+              <h3>Proyecto "Vampiro"</h3>
+              <p><strong>Problema:</strong> Simular una reacción mecánica automatizada frente a cambios en la iluminación del entorno.</p>
+              <p><strong>Solución:</strong> Sistema interactivo en el cual un servomotor acciona un mecanismo que simula ser un vampiro al detectar presencia de luz.</p>
+              <p><strong>Participación:</strong> Mi aporte estuvo enfocado exclusivamente en el desarrollo y la lógica del código.</p>
+              <p><strong>Tecnologías:</strong> [materiales Arduino, C++, servomotor, sensor de luz LDR]</p>
+              
+              <p class="evidencia">
+            
+              </p>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="tarjeta">
+            <img src="assets/img/holahola.png" alt="Captura o fotografía de la puerta con código para el museo">
+            <div class="tarjeta-cuerpo">
+              <span class="anio">Feria de Ciencias</span>
+              <h3>Puerta de acceso al "Museo"</h3>
+              <p><strong>Problema:</strong> Controlar el ingreso a una muestra temática de Feria de Ciencias mediante un desafío lógico interactivo.</p>
+              <p><strong>Solución:</strong> Maqueta de puerta automatizada hacia un "museo" que permanece cerrada y se abre únicamente al descifrar e ingresar el código correcto.</p>
+              
+              <p><strong>Tecnologías:</strong> [materiales: Herramientas, placa o componentes utilizados]</p>
+              
+              <p class="evidencia">
+             
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Habilidades y conocimientos -->
+    <section id="habilidades" class="seccion">
+      <div class="contenedor">
+        <h2>Habilidades y conocimientos</h2>
+        <ul class="lista-habilidades">
+          <li>Programación y lógica de control</li>
+          <li>Robótica y uso de sensores / actuadores (servomotores)</li>
+          <li>Armado y prueba de prototipos electrónicos</li>
+          <li>Maquetación web básica con HTML5 y CSS3</li>
+          <li>Control de versiones con GitHub</li>
+      
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección 5: Contacto seguro -->
+    <section id="contacto" class="seccion seccion-alterna">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <p>Si querés comunicarte por proyectos o consultas académicas, podés escribirme por estos medios:</p>
+        <ul class="lista-contacto">
+          <li><strong>Correo electrónico:</strong> <a href="mailto:santinoasimismo@gmail.com">santinoasimismo@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/santinocorzo" target="_blank" rel="noopener noreferrer">github.com/santinocorzo</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Santino Corzo • Portfolio Web v0.1</p>
+    </div>
+  </footer>
+
+</body>
+</html>
