@@ -1,0 +1,295 @@
+/* =========================================================
+   1. VARIABLES DE COLOR Y CONFIGURACIÓN GENERAL
+   Paleta minimalista de alto contraste y lectura cómoda
+   ========================================================= */
+:root {
+  --principal: #1e293b;      /* Azul pizarra oscuro para encabezados y acentos */
+  --secundario: #2563eb;     /* Azul limpio para enlaces y botones */
+  --secundario-hover: #1d4ed8;
+  --fondo: #f8fafc;          /* Gris muy claro, suave para la vista */
+  --fondo-alterno: #f1f5f9;  /* Tono sutil para diferenciar secciones */
+  --superficie: #ffffff;     /* Blanco puro para tarjetas */
+  --texto: #1e293b;          /* Texto principal oscuro legible */
+  --texto-suave: #475569;    /* Texto secundario */
+  --borde: #e2e8f0;          /* Bordes sutiles */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenedor centrado para mantener márgenes cómodos */
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================================= */
+header {
+  background-color: var(--superficie);
+  border-bottom: 1px solid var(--borde);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.marca h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--principal);
+}
+
+.marca .subtitulo {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: var(--secundario);
+  border-bottom-color: var(--secundario);
+}
+
+/* =========================================================
+   3. SECCIONES GENERALES E INICIO
+   ========================================================= */
+.seccion {
+  padding: 3.5rem 0;
+}
+
+.seccion-alterna {
+  background-color: var(--fondo-alterno);
+  border-top: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
+}
+
+.seccion h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--principal);
+}
+
+.intro-seccion {
+  color: var(--texto-suave);
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Presentación principal */
+.inicio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.inicio-texto {
+  flex: 1 1 320px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: var(--secundario);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.frase-profesional {
+  font-size: 1.15rem;
+  color: var(--texto-suave);
+  margin-bottom: 1.5rem;
+}
+
+.inicio-imagen {
+  flex: 0 0 180px;
+}
+
+.inicio-imagen img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--borde);
+}
+
+/* Botón principal */
+.boton {
+  display: inline-block;
+  background-color: var(--secundario);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.boton:hover,
+.boton:focus {
+  background-color: var(--secundario-hover);
+}
+
+/* =========================================================
+   4. TARJETAS DE PROYECTOS
+   ========================================================= */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--borde);
+}
+
+.tarjeta-cuerpo {
+  padding: 1.25rem;
+}
+
+.anio {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--secundario);
+  margin-bottom: 0.35rem;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--principal);
+}
+
+.tarjeta p {
+  font-size: 0.92rem;
+  margin: 0.45rem 0;
+  color: var(--texto-suave);
+}
+
+.tarjeta p strong {
+  color: var(--texto);
+}
+
+.evidencia {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--borde);
+}
+
+.evidencia a,
+.lista-contacto a {
+  color: var(--secundario);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.evidencia a:hover,
+.lista-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   5. HABILIDADES, CONTACTO Y PIE DE PÁGINA
+   ========================================================= */
+.lista-habilidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.lista-habilidades li {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  padding: 0.55rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.lista-contacto {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.lista-contacto li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--superficie);
+  border-top: 1px solid var(--borde);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
